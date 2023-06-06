@@ -1,0 +1,161 @@
+{{ 'section-reserve.css' | asset_url | stylesheet_tag }}
+
+<div class="section-{{ section.id }}">
+  <div class="reserve-wrapper">
+    <div class="reserve-header">
+      <img src="{{ section.settings.icon | img_url: 'master' }}" alt="dragonfly icon" />
+      <h2>{{ section.settings.main_heading }}</h2>
+    </div>
+    <div class="reserve-form-container">
+      {%- form 'contact', id: 'ContactForm' -%}
+      {%- if form.posted_successfully? -%}
+        <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
+      {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+            </a>
+          </li>
+        </ul>
+      {%- endif -%}
+      <div class="contact__fields">
+        <div class="field field--with-error">
+          <input
+            autocomplete="email"
+            type="email"
+            id="ContactForm-email"
+            class="field__input"
+            name="contact[email]"
+            spellcheck="false"
+            autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            aria-required="true"
+            {% if form.errors contains 'email' %}
+              aria-invalid="true"
+              aria-describedby="ContactForm-email-error"
+            {% endif %}
+            placeholder="Your email"
+          >
+          {%- if form.errors contains 'email' -%}
+            <small class="contact__field-error" id="ContactForm-email-error">
+              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+              <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
+            </small>
+          {%- endif -%}
+        </div>
+        <div class="field">
+          <select name="contact['Model']" class="field__input" id="select_model">
+            {% for block in section.blocks %}
+              {% if block.settings.model_name_price != blank %}
+              <option value="{{ block.settings.model_name_price }}">{{ block.settings.model_name_price }}</option>
+              {% endif %}
+            {% endfor %}
+          </select>
+        </div>
+        <div class="field contact__button">
+          <button type="submit" class="button">
+            RESERVE DRAGONFLY
+          </button>
+        </div>
+      </div>
+      <div class="newsletter-checkbox">
+        <input type="checkbox" name="contact['Newsletter']" id="newsletterCheckbox"> <label for="newsletterCheckbox" class="inputLabel">Sign me up for Dragonfly newsletter</label>
+      </div>
+  {%- endform -%}
+    </div>
+    <div class="model-image-wrapper">
+      {% for block in section.blocks %}
+          <figure class="{% if forloop.first %}active{% endif %}">
+            {% if block.settings.model_image != blank %}
+            <img src="{{ block.settings.model_image | img_url: 'master' }}" alt="{{ block.settings.model_name }}">
+            {% endif %}
+            {% if block.settings.model_name != blank %}
+            <figcaption>{{ block.settings.model_name }} <span>SELECTED</span></figcaption>
+            {% endif %}
+          </figure>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Reserve Section",
+  "tag": "section",
+  "class": "reserve-section",
+  "settings": [
+    {
+      "type":"text",
+      "label":"Heading",
+      "id":"main_heading",
+      "default":"READY TO FLY"
+    },
+    {
+      "type":"image_picker",
+      "label":"Dragonfly Icon",
+      "id":"icon"
+    },
+    {
+      "type":"text",
+      "label":"Button Label",
+      "id":"button_label",
+      "default":"RESERVE DRAGONFLY"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "model",
+      "name": "Model",
+      "settings": [
+        {
+          "type": "text",
+          "id": "model_name_price",
+          "label": "Model Name With Price",
+          "default": "DF Model - $600 USD"
+        },
+        {
+          "type": "image_picker",
+          "id": "model_image",
+          "label": "Model Image"
+        },
+        {
+          "type": "text",
+          "id": "model_name",
+          "label": "Model Name",
+          "default": "DF Model"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reserve Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+  $(function(){
+    $(document).on("change", "#select_model", function(e){
+      console.log();
+      if($(this).val() == "DF Model - $600 USD") {
+        $(".model-image-wrapper figure").removeClass("active");
+        $(".model-image-wrapper figure:eq(0)").addClass("active");
+      }
+      else if($(this).val() == "DFX Model - $800 USD") { 
+        $(".model-image-wrapper figure").removeClass("active");
+        $(".model-image-wrapper figure:eq(1)").addClass("active");
+      }
+      else {
+        
+      }
+    });
+  });
+{% endjavascript %}

@@ -1,0 +1,60 @@
+<div class="testing">
+  <div class="banner_text">
+    <div class="image">
+      <img src="{{ section.settings.image | img_url: 'original' }}">
+        
+    </div>
+    <div class="desc">
+      <h2>{{ section.settings.heading }}</h2>
+     <h3>{{ section.settings.subheading }}</h3>
+    </div>
+
+    <div class="button">
+        <a href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Testing",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "subheading",
+        "label": "Sub Heading"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Buton Text"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Buton Url"
+      }
+    ],
+    "presets":[
+      {
+     "name": "Testing"        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

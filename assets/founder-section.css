@@ -1,0 +1,287 @@
+.founder-section {
+  background: #000;
+  color: #fff;
+}
+.fs-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 170px 0px;
+}
+.fs-left {
+  max-width: calc(46.2% - 35px);
+  position: relative;
+}
+.fs-right {
+  max-width: calc(53.8% - 35px);
+}
+.btn.fs_btn.active .play{
+  opacity: 0;
+}
+/*.fs_btn.active{
+  opacity: 0;
+}
+.clip.active .vdo_btn{
+  opacity: 0;
+}*/
+.f_img{
+  background: linear-gradient(180deg, #16161D 0%, rgba(22, 22, 29, 0.5) 48.96%, rgba(22, 22, 29, 0) 100%);
+  border: 1px solid #31323B;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20.6912px; 
+}
+.fs-left img {
+  width: 100%;
+  display: block;
+  margin-top: -75px;
+}
+.fs-right h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: left;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff !important;
+  margin: 0;
+}
+p.discription {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #9e9e9e;
+  margin: 21px 0 0;
+  font-family: 'Times New Roman';
+}
+p.designation {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #9e9e9e;
+  margin: 0;
+  margin-top: 26px;
+  font-family: 'Times New Roman';
+}
+.fs-right button {
+  max-width: 318px;
+  width: 100%;
+  height: 72px;
+  background: #00e3a5;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #181818;
+  position: relative;
+  margin-top: 70px;
+}
+.fs-right button::after {
+  content: "";
+  background: #00e3a5;
+  opacity: 0.4;
+  filter: blur(16px);
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.btn.active .play {
+  box-shadow: 0 0 0 150vh #000;
+}
+
+.btn .play {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 13, 30, 0.8) 0%,
+    rgba(14, 13, 30, 0.8) 47.4%,
+    rgba(14, 13, 30, 0) 100%
+  );
+  border: 2.60274px solid #000000;
+}
+
+.clip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  transition: 0.4s;
+  opacity: 0;
+}
+.clip.active {
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 100;
+  opacity: 1;
+}
+.clip video {
+  max-width: 50%;
+  max-height: 525px;
+  outline: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    #0e0d1e 0%,
+    #0e0d1e 47.4%,
+    rgba(14, 13, 30, 0) 100%
+  ); 
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.clip .close:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.clip .close span {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  width: 35px;
+  height: 35px;
+}
+
+.clip .close span img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn .play::before {
+  content: "";
+  position: absolute;
+  border: 25px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 0px solid transparent;
+}
+
+body.overflow {
+  overflow: hidden;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1280px) {
+  .fs-main {
+    padding: 170px 50px;
+  }
+  .fs-right button {
+    margin-top: 40px;
+  }
+  p.discription {
+    margin-top: 10px;
+  }
+  p.designation {
+    margin-top: 13px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .clip video{
+      max-width: 80%;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1140px) {
+  p.discription{
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .fs-left,
+  .fs-right {
+    width: 100%;
+    max-width: unset;
+  }
+  .fs-main {
+    padding: 0 40px;
+  }
+  .fs-right {
+    padding: 43px 80px 0 80px;
+  }
+  .clip video {
+    max-width: 600px;
+  }
+  .fs-left img {
+    margin-top: -100px;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .fs-main {
+    padding: 0 15px;
+  }
+  .fs-right {
+    padding: 43px 30px 0 30px;
+  }
+  .fs-right h2 {
+    margin: 0;
+  }
+  p.discription{
+    margin: 0;
+    margin-top: 21px;
+  }
+  p.designation{
+    margin: 0;
+    margin-top: 21px;
+  }
+  .fs-right button{
+    margin-top: 70px;
+  }
+  .clip video {
+    max-width: 90%;
+    height: 60vh;
+    object-fit: cover;
+    max-height: unset;
+  }
+  .clip .close span {
+    right: unset;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+  }
+  .fs-left img {
+    margin-top: -75px;
+  }
+}

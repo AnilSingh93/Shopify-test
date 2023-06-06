@@ -1,0 +1,68 @@
+{% if section.settings.hero_img != blank %}
+<div class="hero-banner">
+  <img src="{{ section.settings.hero_img|img_url:'master'}}" alt="{{ section.settings.heading }}">
+  <div class="hero-text-box">
+    {% if section.settings.hero_heading != blank %}    
+      <h1 class="banner__heading h1">
+        {{ section.settings.hero_heading | escape }}
+      </h1>
+    {% endif %}
+    {% if section.settings.hero_sub_heading != blank %}    
+      <p class="banner__subheading">
+        {{ section.settings.hero_sub_heading }}
+      </p>  
+    {% endif %}
+    {% if section.settings.hero_button != blank %}  
+          <a class="hero-button" href="{{section.settings.hero_btn_url}}">{{section.settings.hero_button}}</a>
+    {% endif %}
+  </div>
+  {% if section.settings.marquee != blank %} 
+  <div class="marquee-container">
+      <div class="marquee">{{ section.settings.marquee }}</div>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+{% schema %}
+{
+  "name": "Hero Banner",
+  "class": "hero-banner-main",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "hero_img",
+      "label": "Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "hero_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "hero_sub_heading",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "hero_button",
+      "label": "Button Text"
+    },
+    {
+      "type": "text",
+      "id": "hero_btn_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "marquee",
+      "label": "Marquee text"
+    }
+  ],
+   "presets": [
+    {
+      "name": "Hero Banner"
+    }
+  ]
+}
+{% endschema %}

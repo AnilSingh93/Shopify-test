@@ -1,0 +1,293 @@
+{
+  "current": {
+    "social_youtube_link": "",
+    "mlvedaACS_roundDecimal": false,
+    "colors_outline_button_labels": "#121212",
+    "colors_background_2": "#f3f3f3",
+    "type_body_font": "assistant_n4",
+    "mlvedaACS_positionLeft": "10px",
+    "mlvedaACS_defaultCurrency": "AUD",
+    "mlvedaACS_textColor": "inherit",
+    "mlvedaACS_autoSwitch": false,
+    "mlvedaACS_flagStyle": "circle",
+    "mlvedaACS_isMessageDisplay": true,
+    "mlvedaACS_positionBottom": "10px",
+    "colors_background_1": "#ffffff",
+    "mlvedaACS_messageBackgroundColor": "inherit",
+    "mlvedaACS_messageContent": "<<shop.name>> process all orders in <<shop.currency>>. While the content of your cart is currently displayed in <<shop.selected_currency>>, you will checkout using <<shop.currency>> at the most current exchange rate.",
+    "social_instagram_link": "https:\/\/www.instagram.com\/hylandsnaturals\/",
+    "mlvedaACS_roundDecimalValue": 1,
+    "mlvedaACS_backgroundColor": "#ffffff",
+    "mlvedaACS_position": "top_with_right",
+    "mlvedaACS_messageColor": "inherit",
+    "mlvedaACS_os2": true,
+    "colors_text": "#1b4388",
+    "mlvedaACS_textHoverColor": "inherit",
+    "favicon": "shopify:\/\/shop_images\/Favicon_1.png",
+    "mlvedaACS_enable": false,
+    "mlvedaACS_positionTop": "10px",
+    "blocks": {
+      "13640948602786038981": {
+        "settings": {
+        },
+        "disabled": false,
+        "type": "shopify:\/\/apps\/multi-currency-converter\/blocks\/app-embed\/126f8663-f9d6-4d70-8882-8d4df1e3c436"
+      }
+    },
+    "social_facebook_link": "https:\/\/www.facebook.com\/HylandsNaturals",
+    "mlvedaACS_supportedCurrencies": "USD GBP EUR CAD AUD INR JPY",
+    "mlvedaACS_isCustomized": true,
+    "checkout_customization": true,
+    "sections": {
+      "announcement-bar": {
+        "settings": {
+        },
+        "blocks": {
+          "announcement-bar-0": {
+            "settings": {
+              "text2": "Sign up for 20% off!",
+              "link": "#",
+              "color_scheme": "accent-2",
+              "text": "Orders $25+ eligible for free shipping",
+              "link2": ""
+            },
+            "type": "announcement"
+          },
+          "f955125a-8b69-4343-a45a-9b1ea6b6f857": {
+            "settings": {
+              "text2": "Welcome to our store",
+              "link": "",
+              "color_scheme": "accent-1",
+              "text": "For a VERY limited time, get a FREE bottle of Bioplasma with every purchase! (Retail only, ends 4\/28\/22).",
+              "link2": ""
+            },
+            "disabled": true,
+            "type": "announcement"
+          }
+        },
+        "type": "announcement-bar",
+        "block_order": [
+          "announcement-bar-0",
+          "f955125a-8b69-4343-a45a-9b1ea6b6f857"
+        ]
+      },
+      "footer": {
+        "settings": {
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "enable_country_selector": false,
+          "assess": "",
+          "link": "",
+          "color_scheme": "background-1",
+          "tou": "",
+          "link2": "",
+          "show_social": true,
+          "enable_language_selector": true,
+          "payment_enable": false
+        },
+        "blocks": {
+          "footer-1": {
+            "settings": {
+              "subtext": "<p>Sign up for updates<\/p>",
+              "heading": "Join Hyland’s community"
+            },
+            "type": "text"
+          },
+          "footer-0": {
+            "settings": {
+              "heading": "About",
+              "menu": ""
+            },
+            "type": "link_list"
+          },
+          "6e3bf290-289a-411f-9bf5-c5483e64fdbe": {
+            "settings": {
+              "heading": "HELP",
+              "menu": ""
+            },
+            "type": "link_list"
+          },
+          "749a70e8-ab17-4002-ab44-d4669f072165": {
+            "settings": {
+              "para": "Some of our products based on traditional homeopathic practice have not been evaluated by the FDA and are not intended to diagnose, treat, cure or prevent any disease.",
+              "image_width": 200,
+              "alignment": "center"
+            },
+            "type": "image"
+          }
+        },
+        "type": "footer",
+        "block_order": [
+          "footer-1",
+          "footer-0",
+          "6e3bf290-289a-411f-9bf5-c5483e64fdbe",
+          "749a70e8-ab17-4002-ab44-d4669f072165"
+        ]
+      },
+      "mini-cart": {
+        "settings": {
+          "freeshipPrice": "25"
+        },
+        "type": "mini-cart"
+      },
+      "header": {
+        "settings": {
+          "enable_sticky_header": true,
+          "color_scheme": "background-1",
+          "show_line_separator": true,
+          "logo_position": "middle-left",
+          "menu": "",
+          "logo_width": 140
+        },
+        "blocks": {
+          "dae9d9c1-7111-4bf3-b9b7-0b29e797128f": {
+            "settings": {
+              "menu_rel": "Shop",
+              "menu_link": "shopify:\/\/collections\/cell-salts",
+              "menu_label": "SHOP CELL SALTS"
+            },
+            "type": "mega_menu"
+          }
+        },
+        "type": "header",
+        "block_order": [
+          "dae9d9c1-7111-4bf3-b9b7-0b29e797128f"
+        ]
+      },
+      "email-popup": {
+        "settings": {
+        },
+        "type": "email-popup"
+      },
+      "footer-section": {
+        "settings": {
+          "copyright": "© Dragonfly 2022 All rights reserved",
+          "footer-menu": "footer"
+        },
+        "blocks": {
+          "4a1c990e-125f-494f-9778-1cb8d717d45f": {
+            "settings": {
+              "icon_url": "#",
+              "icon_image": "shopify:\/\/shop_images\/1-brand-twitter.png",
+              "icon_name": "Twitter"
+            },
+            "type": "Icon"
+          },
+          "8daedf4d-2aa4-4490-bd3c-800aeeb48e77": {
+            "settings": {
+              "icon_url": "#",
+              "icon_image": "shopify:\/\/shop_images\/facebook_ac2a2929-6005-4e07-8c4b-100f073631aa.png",
+              "icon_name": "Facebook"
+            },
+            "type": "Icon"
+          },
+          "c9ced1b6-ee54-4b24-8234-88fc7a02816c": {
+            "settings": {
+              "icon_url": "#",
+              "icon_image": "shopify:\/\/shop_images\/insta_86921881-8dfa-4804-b602-f7f3193f647e.png",
+              "icon_name": "Instagram"
+            },
+            "type": "Icon"
+          },
+          "2dd821a2-5db6-4e7e-a31f-85b0b2bfe995": {
+            "settings": {
+              "icon_url": "#",
+              "icon_image": "shopify:\/\/shop_images\/linkdin_f86286cb-4301-4c8d-a057-989403d9fe5e.png",
+              "icon_name": "Linkdin"
+            },
+            "type": "Icon"
+          }
+        },
+        "type": "footer-section",
+        "block_order": [
+          "2dd821a2-5db6-4e7e-a31f-85b0b2bfe995",
+          "8daedf4d-2aa4-4490-bd3c-800aeeb48e77",
+          "4a1c990e-125f-494f-9778-1cb8d717d45f",
+          "c9ced1b6-ee54-4b24-8234-88fc7a02816c"
+        ]
+      }
+    },
+    "mlvedaACS_hideDecimal": false,
+    "colors_accent_1": "#1b4388",
+    "mlvedaACS_hoverBackgroundColor": "inherit",
+    "mlvedaACS_positionRight": "10px",
+    "content_for_index": [
+
+    ],
+    "colors_accent_2": "#1b4388",
+    "mlvedaACS_currencyFormat": "money_with_currency_format",
+    "mlvedaACS_borderLineColor": "inherit",
+    "colors_solid_button_labels": "#ffffff",
+    "mlvedaACS_displayFlag": false,
+    "mlvedaACS_borderLook": true,
+    "type_header_font": "assistant_n4",
+    "social_twitter_link": "https:\/\/twitter.com\/hylandsnaturals",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Header-svg_200x_2x_5f933d5a-c981-492c-b456-9c1a828677dc.png"
+  },
+  "presets": {
+    "Craft": {
+      "colors_accent_1": "#2A332F",
+      "colors_text": "#1C1A1A",
+      "colors_background_1": "#EFECEC",
+      "colors_accent_2": "#476154",
+      "colors_outline_button_labels": "#7B8382",
+      "colors_solid_button_labels": "#EFECEC",
+      "colors_background_2": "#C1BCAE",
+      "type_body_font": "quattrocento_sans_n4",
+      "type_header_font": "americana_n4",
+      "sections": {
+        "footer": {
+          "settings": {
+            "color_scheme": "accent-1"
+          },
+          "blocks": {
+            "text": {
+              "settings": {
+              },
+              "type": "text"
+            },
+            "menu": {
+              "settings": {
+              },
+              "type": "link_list"
+            }
+          },
+          "type": "footer",
+          "block_order": [
+            "menu",
+            "text"
+          ]
+        }
+      }
+    },
+    "Default": {
+      "colors_accent_1": "#121212",
+      "colors_text": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_accent_2": "#334FB4",
+      "colors_outline_button_labels": "#121212",
+      "colors_solid_button_labels": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "type_body_font": "assistant_n4",
+      "type_header_font": "assistant_n4",
+      "sections": {
+        "announcement-bar": {
+          "settings": {
+          },
+          "blocks": {
+            "announcement-bar-0": {
+              "settings": {
+                "color_scheme": "background-1"
+              },
+              "type": "announcement"
+            }
+          },
+          "type": "announcement-bar",
+          "block_order": [
+            "announcement-bar-0"
+          ]
+        }
+      }
+    }
+  }
+}

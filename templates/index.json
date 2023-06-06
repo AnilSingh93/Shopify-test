@@ -1,0 +1,374 @@
+{
+  "sections": {
+    "f97ab59c-0ee9-4a19-a4c4-3c25eb763d2c": {
+      "type": "hero-section",
+      "settings": {
+        "main_heading": "EXPERIENCE THE THRILL OF FLIGHT",
+        "sub_heading": "DRAGONFLY HYPERSCOOTER",
+        "btn_text": "RESERVE YOURS TODAY",
+        "note_text": "BEFORE THEY SELL OUT!",
+        "video_cover": "shopify:\/\/shop_images\/Video1.png",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/466fb9cc7509481f9fafff7fbb41afc0.mp4"
+      }
+    },
+    "9d99b114-0d06-4b2b-a792-55301df50611": {
+      "type": "as-seen-on",
+      "blocks": {
+        "895efb95-9892-4e1a-a937-2e143746a662": {
+          "type": "Logo",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/Mashable_-_png_Traced.png"
+          }
+        },
+        "3d628356-6ab0-49d6-b120-89477c81d239": {
+          "type": "Logo",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/GSQ.png"
+          }
+        },
+        "fe7c7c40-8637-4699-b3d2-dcc9c6b38e9a": {
+          "type": "Logo",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/Forbes_svg.png"
+          }
+        },
+        "894003fd-910b-4fda-975c-caafb3dcc6d9": {
+          "type": "Logo",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/The_Verge_svg.png"
+          }
+        },
+        "1c260aed-32ee-47c5-82ed-67bd17042ac8": {
+          "type": "Logo",
+          "settings": {
+            "logo_image": "shopify:\/\/shop_images\/New_Atlas.png"
+          }
+        }
+      },
+      "block_order": [
+        "895efb95-9892-4e1a-a937-2e143746a662",
+        "3d628356-6ab0-49d6-b120-89477c81d239",
+        "fe7c7c40-8637-4699-b3d2-dcc9c6b38e9a",
+        "894003fd-910b-4fda-975c-caafb3dcc6d9",
+        "1c260aed-32ee-47c5-82ed-67bd17042ac8"
+      ],
+      "settings": {
+      }
+    },
+    "shogun-home": {
+      "type": "shogun-home",
+      "settings": {
+      }
+    },
+    "26e2564d-7322-4e02-b03f-46270c8be0e7": {
+      "type": "feature-box-section",
+      "settings": {
+        "heading": "CHOOSE YOUR MODEL",
+        "sub_heading": "From urban streets to off-road trails, Dragonfly sets new standards in design, engineering, and sustainability",
+        "tab1_label": "DF MODEL",
+        "tab1_cta_text": "",
+        "tab1_price": "",
+        "tab2_label": "DF MODEL",
+        "tab2_cta_text": "",
+        "tab2_price": ""
+      }
+    },
+    "4fa9d1a3-31b7-4015-887a-3c0db773129a": {
+      "type": "section-reserve",
+      "blocks": {
+        "39089021-7df2-4fbc-bacb-0935c0da69da": {
+          "type": "model",
+          "settings": {
+            "model_name_price": "DF Model - $600 USD",
+            "model_image": "shopify:\/\/shop_images\/DF-model.png",
+            "model_name": "DF Model"
+          }
+        },
+        "90b5d464-9537-4e6a-8ac3-d633f0d8277e": {
+          "type": "model",
+          "settings": {
+            "model_name_price": "DFX Model - $800 USD",
+            "model_image": "shopify:\/\/shop_images\/DFX-Model.png",
+            "model_name": "DFX Model"
+          }
+        }
+      },
+      "block_order": [
+        "39089021-7df2-4fbc-bacb-0935c0da69da",
+        "90b5d464-9537-4e6a-8ac3-d633f0d8277e"
+      ],
+      "settings": {
+        "main_heading": "READY TO FLY",
+        "icon": "shopify:\/\/shop_images\/dragonfly.png",
+        "button_label": "RESERVE DRAGONFLY"
+      }
+    },
+    "1659074376cbe53d6b": {
+      "type": "hero-banner",
+      "disabled": true,
+      "settings": {
+        "hero_heading": "Safe, natural cold relief for kids",
+        "hero_sub_heading": "Shop gentle products that work hard to relieve cough and cold symptoms for your little ones.",
+        "hero_button": "SHOP KID'S COLD & COUGH",
+        "hero_btn_url": "https:\/\/hylands.com\/collections\/kids-cold-cough",
+        "marquee": "COLD & COUGH • <a href=\"https:\/\/hylands.com\/\">PAIN RELIEF<\/a> • TEETHING • EARACHE • CALMING • SLEEP • STRESS • MUSCLE PAIN • LEG PAIN • TUMMY ACHE • DIGESTION • ALLERGIES • SKIN • WORKOUT RECOVERY"
+      }
+    },
+    "1659082521b87ebc5e": {
+      "type": "four-products-side-image",
+      "disabled": true,
+      "blocks": {
+        "f757c557-e35c-45e9-8d7c-7dd39929c529": {
+          "type": "card",
+          "settings": {
+            "product_item": "kids-organic-elderberry-plus-gummies"
+          }
+        },
+        "ec216bca-4c00-444e-b36f-45cd725c4017": {
+          "type": "card",
+          "settings": {
+            "product_item": "organic-elderberry-plus-gummies"
+          }
+        },
+        "05bca7d0-d9ce-4eac-8783-3bbec6ea4900": {
+          "type": "card",
+          "settings": {
+            "product_item": "stress-busters-gummies"
+          }
+        },
+        "873c17d4-2ed7-4aa5-b075-9ce60cabb60b": {
+          "type": "card",
+          "settings": {
+            "product_item": "apple-cider-vinegar-blast"
+          }
+        }
+      },
+      "block_order": [
+        "f757c557-e35c-45e9-8d7c-7dd39929c529",
+        "ec216bca-4c00-444e-b36f-45cd725c4017",
+        "05bca7d0-d9ce-4eac-8783-3bbec6ea4900",
+        "873c17d4-2ed7-4aa5-b075-9ce60cabb60b"
+      ],
+      "settings": {
+        "main_head": "Created just for you and your little ones",
+        "main_subhead": "Our approach is rooted in nature’s very best healing ingredients—free of drug interactions and artificial stuff, always.",
+        "sec_head": "Goodness-packed gummies",
+        "sec_subhead": "Our new Organic Elderberry Plus vitamin gummies for kids and adults are packed with high-potency Black Elderberry, Vitamin C, and Zinc."
+      }
+    },
+    "16590875705df24038": {
+      "type": "most-popular-products",
+      "disabled": true,
+      "blocks": {
+        "c0d3b957-f8ac-490a-bd93-666a70f4bf7c": {
+          "type": "card",
+          "settings": {
+            "best_seller": true,
+            "btn_label": "IMMUNITY BOOST",
+            "btn_url": "https:\/\/hylands.com\/collections\/adults-gummies"
+          }
+        },
+        "e42fb165-4c8e-4c48-b7b7-36b70fb2695c": {
+          "type": "card",
+          "settings": {
+            "best_seller": false,
+            "btn_label": "LEG PAIN",
+            "btn_url": "https:\/\/www.hylands.com\/collections\/adults-leg-pain"
+          }
+        },
+        "e07ffbda-688f-4553-a1cc-bd83e0b23fd7": {
+          "type": "card",
+          "settings": {
+            "best_seller": false,
+            "btn_label": "STRESS &amp; SLEEP",
+            "btn_url": "https:\/\/www.hylands.com\/collections\/stress-sleep"
+          }
+        },
+        "b781c813-0580-4f17-b065-54709b3868e4": {
+          "type": "card",
+          "settings": {
+            "best_seller": false,
+            "btn_label": "CELL SALTS",
+            "btn_url": "https:\/\/www.hylands.com\/collections\/cell-salts"
+          }
+        },
+        "7b2196e6-732d-4045-9bb8-50cd6af2394b": {
+          "type": "card",
+          "settings": {
+            "best_seller": false,
+            "btn_label": "ACTIVE LIFESTYLE",
+            "btn_url": "https:\/\/www.hylands.com\/collections\/athletes"
+          }
+        },
+        "d4b09340-6dfd-4a6c-8790-a93ce385d25b": {
+          "type": "card",
+          "settings": {
+            "best_seller": false,
+            "btn_label": "SMOKING CESSATION",
+            "btn_url": "https:\/\/www.hylands.com\/collections\/adult-smoking-cessation"
+          }
+        }
+      },
+      "block_order": [
+        "c0d3b957-f8ac-490a-bd93-666a70f4bf7c",
+        "e42fb165-4c8e-4c48-b7b7-36b70fb2695c",
+        "e07ffbda-688f-4553-a1cc-bd83e0b23fd7",
+        "b781c813-0580-4f17-b065-54709b3868e4",
+        "7b2196e6-732d-4045-9bb8-50cd6af2394b",
+        "d4b09340-6dfd-4a6c-8790-a93ce385d25b"
+      ],
+      "settings": {
+        "sec_head": "Most popular products"
+      }
+    },
+    "1659089423312ac6e6": {
+      "type": "four-landing-pages",
+      "disabled": true,
+      "blocks": {
+        "41878f81-c84f-47e2-8e57-6ec633babd03": {
+          "type": "card",
+          "settings": {
+            "btn_label": "Baby",
+            "btn_url": "https:\/\/hylands.com\/pages\/baby"
+          }
+        },
+        "5cc8b827-2fb7-4da9-815d-73d94ff8fac3": {
+          "type": "card",
+          "settings": {
+            "btn_label": "Kids",
+            "btn_url": "https:\/\/hylands.com\/pages\/kids"
+          }
+        },
+        "87487367-3806-4e63-9a0a-be44acf0a104": {
+          "type": "card",
+          "settings": {
+            "btn_label": "Adult",
+            "btn_url": "https:\/\/hylands.com\/pages\/adults"
+          }
+        },
+        "8dcee4c4-dd9a-44f9-9e4c-680eceb56653": {
+          "type": "card",
+          "settings": {
+            "btn_label": "Athletes",
+            "btn_url": "https:\/\/hylands.com\/pages\/"
+          }
+        }
+      },
+      "block_order": [
+        "41878f81-c84f-47e2-8e57-6ec633babd03",
+        "5cc8b827-2fb7-4da9-815d-73d94ff8fac3",
+        "87487367-3806-4e63-9a0a-be44acf0a104",
+        "8dcee4c4-dd9a-44f9-9e4c-680eceb56653"
+      ],
+      "settings": {
+        "sec_head": "Supporting healthier living for all",
+        "sec_subhead": "Find just the right thing for the whole family to support daily wellness or get back to feeling their best."
+      }
+    },
+    "1659099892e266de76": {
+      "type": "customSearch",
+      "disabled": true,
+      "blocks": {
+        "569496a6-03e5-40c7-beb7-2f0e7a8728f5": {
+          "type": "card",
+          "settings": {
+            "product_item": "hylands-leg-cramps-caplets"
+          }
+        },
+        "8e0015fc-2570-41bb-bfca-dce13683fc59": {
+          "type": "card",
+          "settings": {
+            "product_item": "hylands-4-kids-pain-relief"
+          }
+        },
+        "0bea8d88-e601-42ed-9ca1-3ad283f3b0dc": {
+          "type": "card",
+          "settings": {
+            "product_item": "hylands-baby-oral-pain-relief"
+          }
+        }
+      },
+      "block_order": [
+        "569496a6-03e5-40c7-beb7-2f0e7a8728f5",
+        "8e0015fc-2570-41bb-bfca-dce13683fc59",
+        "0bea8d88-e601-42ed-9ca1-3ad283f3b0dc"
+      ],
+      "settings": {
+        "sec_head": "Let us know what you’re looking for"
+      }
+    },
+    "ae90a3aa-cf6a-4804-8a04-70a64e8d4471": {
+      "type": "section-quote",
+      "settings": {
+        "bg_color": "#31323b",
+        "bg_image": "shopify:\/\/shop_images\/Blurred-Ellipse.png",
+        "heading": "The future is here",
+        "desc": "<p>We envision a world where clean, sustainable electric mobility is part of everyday life, no matter who you are or where you live.<\/p>"
+      }
+    },
+    "cbc88e57-50a0-468e-b356-29e68bad835f": {
+      "type": "founder-section",
+      "settings": {
+      }
+    },
+    "5976b8da-e705-4e2e-9d71-b7f96949d058": {
+      "type": "scroll-quote-section",
+      "blocks": {
+        "5fed44fa-7b5b-43f2-ba2b-d70399ca13b7": {
+          "type": "blockquote",
+          "settings": {
+            "heading_color": "#e6248a",
+            "heading": "",
+            "check_for_image": true,
+            "heading_image": "shopify:\/\/shop_images\/techradar-logo.png",
+            "subheading": "<p>If Batman rode an electric scooter, he’d ride a Dragonfly.<\/p>"
+          }
+        },
+        "e6b8c02e-185e-495b-8c67-8480cbb2b84f": {
+          "type": "blockquote",
+          "settings": {
+            "heading_color": "#00e3a5",
+            "heading": "",
+            "check_for_image": true,
+            "heading_image": "shopify:\/\/shop_images\/auto-logo.png",
+            "subheading": "<p>Described as a hyperscooter, or the supercar equivalent of the scooter, the Dragonfly is a mutant of the breed. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5fed44fa-7b5b-43f2-ba2b-d70399ca13b7",
+        "e6b8c02e-185e-495b-8c67-8480cbb2b84f"
+      ],
+      "settings": {
+        "bg_color": "#16161d",
+        "left_image": "shopify:\/\/shop_images\/quote-left.png",
+        "right_image": "shopify:\/\/shop_images\/quote-right.png"
+      }
+    },
+    "112d9266-2d74-4fff-b39d-83a62b8040ae": {
+      "type": "review-section",
+      "settings": {
+        "heading": "Here’s how dancer, stunt performer and car enthusiast Emma Walsh uses Dragonfly to reach new heights.",
+        "bg_overlay": "shopify:\/\/shop_images\/gradient-bg.png",
+        "video_cover": "shopify:\/\/shop_images\/video-cover-img.png",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d8622c4429354efda6bf824360192fdd.mp4"
+      }
+    }
+  },
+  "order": [
+    "f97ab59c-0ee9-4a19-a4c4-3c25eb763d2c",
+    "9d99b114-0d06-4b2b-a792-55301df50611",
+    "shogun-home",
+    "26e2564d-7322-4e02-b03f-46270c8be0e7",
+    "4fa9d1a3-31b7-4015-887a-3c0db773129a",
+    "1659074376cbe53d6b",
+    "1659082521b87ebc5e",
+    "16590875705df24038",
+    "1659089423312ac6e6",
+    "1659099892e266de76",
+    "ae90a3aa-cf6a-4804-8a04-70a64e8d4471",
+    "cbc88e57-50a0-468e-b356-29e68bad835f",
+    "5976b8da-e705-4e2e-9d71-b7f96949d058",
+    "112d9266-2d74-4fff-b39d-83a62b8040ae"
+  ]
+}

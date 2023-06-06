@@ -1,0 +1,37 @@
+{{ 'as-seen-on.css' | asset_url | stylesheet_tag }}
+  <div class="brand-logo">
+    {% for block in section.blocks %}
+      <img src="{{ block.settings.logo_image | img_url: 'master' }}" class="logo-img" alt="brand-logo"/>
+    {% endfor %}
+  </div>
+{% schema %}
+  {
+    "name": "As Seen On",
+    "class": "as-seen-on",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "Logo",
+        "name": "Brand Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo_image",
+            "label": "Logo Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "As Seen On"
+      }
+     ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

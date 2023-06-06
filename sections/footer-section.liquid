@@ -1,0 +1,68 @@
+{{ 'footer-section.css' | asset_url | stylesheet_tag }}
+
+<footer class="footer">
+  <div class="left-block">
+    <p class="copy">{{ section.settings.copyright }}</p>
+    {% if linklists[section.settings.footer-menu].links.size > 0 %}
+      <div class="footer-menu">
+      {% for link in linklists[section.settings.footer-menu].links %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+  <div class="right-block">
+    {% for block in section.blocks %}
+      <a href="{{ block.settings.icon_url }}"><img src="{{ block.settings.icon_image | img_url: 'master' }}" alt="{{ block.settings.icon_name }} Icon"/></a>
+    {% endfor %}
+  </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer Section",
+  "class": "footer-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "copyright",
+      "label": "Copyrights Text"
+    },
+    {
+      "type": "link_list",
+      "id": "footer-menu",
+      "label": "Choose Menu"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Icon",
+      "name": "Social Icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Image Icon"
+        },
+        {
+          "type": "text",
+          "id": "icon_name",
+          "label": "Icon Name"
+        },
+        {
+          "type": "url",
+          "id": "icon_url",
+          "label": "Icon URL"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

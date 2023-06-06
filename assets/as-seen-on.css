@@ -1,0 +1,41 @@
+.as-seen-on{
+  padding: 83px 74px 40px;
+  background-color: #16161D; 
+}
+.brand-logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-img{
+  height: 43px;
+  display: block;
+}
+
+@media screen and (max-width: 1280px){
+  .logo-img{
+    height: 30px;
+  }
+  .as-seen-on{
+    padding: 93px 56px;
+  }
+}
+@media screen and (max-width: 900px){
+  .brand-logo{
+    flex-direction: column;
+  }
+  .as-seen-on{
+    padding: 72px 75px;
+  }
+  .logo-img{
+    height: auto;
+  }
+  .logo-img:not(:last-child){
+    margin-bottom: 70px;
+  }
+}
+@media screen and (max-width: 767px){
+  .brand-logo{
+    align-items: flex-start;
+  }
+}

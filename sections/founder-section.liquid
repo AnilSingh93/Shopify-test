@@ -1,0 +1,78 @@
+{{ 'founder-section.css' | asset_url | stylesheet_tag }}
+<div class="fs-main">
+    <div class="fs-left">
+        <div class="btn fs_btn">
+            <div class="play"> </div>
+        </div>
+        <div class="clip">
+            <video id="myvideo" poster="https://cdn.shopify.com/s/files/1/0654/5892/9887/files/Video.png?v=1674287411">
+                <source src="https://cdn.shopify.com/videos/c/o/v/466fb9cc7509481f9fafff7fbb41afc0.mp4" type="video/mp4" />
+            </video>
+            <div class="btn vdo_btn">
+                <div class="play"> </div>
+            </div> <b class="close"><span><img src="https://cdn.shopify.com/s/files/1/0654/5892/9887/files/icons8-close-96.png?v=1674297571" alt="close" /></span></b>
+        </div>
+       <div class="f_img">
+        <img src="https://cdn.shopify.com/s/files/1/0654/5892/9887/files/Jez-img.png?v=1674449718" alt="">
+       </div>
+    </div>
+    <div class="fs-right">
+        <h2>Hi, i’m jez</h2>
+        <p class="discription">After spending most of my life as an ultra endurance athlete, extensive knee surgeries left me unable to walk for a year while I recovered</p>
+        <p class="discription">Determined to move, I sought to combine the power of an e-skateboard with the design and stability of four wheels. That’s how <strong>Dragonfly — the world's first hyperscooter was created.</strong></p>
+        <p class="designation">Jez Williman | CO-Founder</p> <button class="primary">Watch Now</button>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Founder-Section",
+    "class": "founder-section",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Founder Section"
+      }
+     ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+let btn = document.querySelector('.btn');
+let clip = document.querySelector('.clip');
+let close = document.querySelector('.close');
+let video_one = document.querySelector('video');
+let body = document.querySelector('body');
+let btn2 = document.querySelector('.clip .btn .play');
+let fs_btn = document.querySelector('.fs_btn');
+
+function togglePlay() {
+    return video_one.paused ? video_one.play() : video_one.pause();
+};
+  
+fs_btn.onclick = function() {
+    this.classList.add('active');
+}  
+btn2.onclick = function() {
+    togglePlay();
+}
+
+btn.onclick = function() {
+    btn.classList.add('active');
+    clip.classList.add('active');
+    //video_one.play();
+    body.classList.add('overflow');
+
+}
+
+close.onclick = function() {
+    btn.classList.remove('active');
+    clip.classList.remove('active');
+    video_one.pause();
+    body.classList.remove('overflow');
+}
+{% endjavascript %}

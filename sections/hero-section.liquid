@@ -1,0 +1,169 @@
+{{ 'hero-section.css' | asset_url | stylesheet_tag }}
+
+<div id="Hero-Banner-{{ section.id }}" class="hero-banner">
+  <div class="hero-wrapper">
+    <div class="hero-column countdown-column">
+      <div class="contdown-wrapper">
+        {% if section.settings.sub_heading != blank %}
+        <p class="subheading">{{ section.settings.sub_heading }}</p>
+        {% endif %}
+        {% if section.settings.main_heading != blank %}
+        <h1 class="mainheading">{{ section.settings.main_heading }}</h1>
+        {% endif %}
+        <div class="countdown-block">
+          <div id="countdown">
+            <div id='tiles'>
+              <span><i>0</i><i>0</i></span>
+              <span><i>0</i><i>0</i></span>
+              <span><i>0</i><i>0</i></span>
+            </div>
+            <ul class="labels">
+              <li>DAYS</li>
+              <li>HOURS</li>
+              <li>MINUTES</li>
+              {% comment %}
+              <li>Secs</li>
+              {% endcomment %}
+            </ul>
+          </div>
+        </div>
+        <div class="hero-button">
+          <button class="button button--primary">{% if section.settings.btn_text != blank %}{{ section.settings.btn_text }}{% else %}RESERVE YOURS TODAY{% endif %}</button>
+          {% if section.settings.note_text != blank %}
+          <p class="below-button-label">{{section.settings.note_text  }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="hero-column video-column">
+      <button class="hero-video-control" id="video-button1">
+        <img src="https://cdn.shopify.com/s/files/1/0654/5892/9887/files/Play_Button.png?v=1674562366" alt="play-pause" />
+        <span class="visually-hidden">Play/Pause</span>
+      </button>
+      <div class="hero-video-cover">
+        <video id="video1" poster="{{ section.settings.video_cover | img_url: 'master' }}" preload="none">
+          <source src="{{ section.settings.video_url}}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        {% comment %}
+        <img class="hero-video-cover-image lazyload"
+        src="{{ section.settings.video_cover | img_url: 'master' }}"
+        data-src="{{ section.settings.video_cover | img_url: '100x' }}"
+        data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+        data-aspectratio="{{ section.settings.video_cover.aspect_ratio }}"
+        data-sizes="auto"
+        data-parent-fit="cover"
+        alt="{{ section.settings.video_cover.alt | escape }}">
+        {% endcomment %}
+      </div>
+    </div>
+    
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Hero Section",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Banner Text"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "label": "Sub Heading"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "text",
+      "id": "note_text",
+      "label": "Below Button Text"
+    },
+    {
+      "type": "header",
+      "content": "Banner Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "video_cover",
+      "label": "Cover Image"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video Url",
+      "info": ".MP4 only"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Section"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+(function () {
+  let videoBtn = document.getElementById("video-button1");
+  let video = document.getElementById("video1");
+
+  videoBtn.addEventListener('click', function () {
+    if (video.paused == false) {
+        video.pause();
+        video.firstChild.nodeValue = 'Play';
+    } else {
+        video.play();
+        video.firstChild.nodeValue = 'Pause';
+    }
+  });
+})();
+
+(function(){
+  var target_date = new Date().getTime() + (1000*3600*48); // set the countdown date
+  var days, hours, minutes, seconds; // variables for time units
+  var countdown = document.getElementById("tiles"); // get tag element
+  getCountdown();
+  setInterval(function () { getCountdown(); }, 1000);
+  function getCountdown(){ 
+  	// find the amount of "seconds" between now and target
+  	var current_date = new Date().getTime();
+  	var seconds_left = (target_date - current_date) / 1000;
+    
+  	days = pad( parseInt(seconds_left / 86400) );
+  	seconds_left = seconds_left % 86400;
+  		 
+  	hours = pad( parseInt(seconds_left / 3600) );
+  	seconds_left = seconds_left % 3600;
+  		  
+  	minutes = pad( parseInt(seconds_left / 60) );
+  	seconds = pad( parseInt( seconds_left % 60 ) );
+  
+  	// format countdown string + set tag value
+  	//countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>";
+    //countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span>";
+    countdown.innerHTML = `<span><i>${days.toString().split('')[0]}</i><i>${days.toString().split('')[1]}</i></span>
+    <span><i>${hours.toString().split('')[0]}</i><i>${hours.toString().split('')[1]}</i></span>
+    <span><i>${minutes.toString().split('')[0]}</i><i>${minutes.toString().split('')[1]}</i></span>`; 
+  }
+
+  function pad(n) {
+  	return (n < 10 ? '0' : '') + n;
+  }
+
+})();
+{% endjavascript %}
